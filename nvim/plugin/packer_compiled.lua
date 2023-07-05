@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/k.krol/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/k.krol/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/k.krol/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/k.krol/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/k.krol/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/kkrol/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/kkrol/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/kkrol/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/kkrol/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/kkrol/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,94 +76,102 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
   LuaSnip = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["fidget.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["neodev.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-code-action-menu"] = {
+    commands = { "CodeActionMenu" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/opt/nvim-code-action-menu",
+    url = "https://github.com/weilbith/nvim-code-action-menu"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-treesitter-textobjects"] = {
     load_after = {},
     loaded = true,
     needs_bufread = false,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["onedark.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/onedark.nvim",
     url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
@@ -171,27 +179,27 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/opt/telescope-fzf-native.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/opt/telescope-fzf-native.nvim",
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-rhubarb"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
     url = "https://github.com/tpope/vim-rhubarb"
   },
   ["vim-sleuth"] = {
     loaded = true,
-    path = "/Users/k.krol/.local/share/nvim/site/pack/packer/start/vim-sleuth",
+    path = "/home/kkrol/.local/share/nvim/site/pack/packer/start/vim-sleuth",
     url = "https://github.com/tpope/vim-sleuth"
   }
 }
@@ -206,6 +214,18 @@ time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
 vim.cmd [[ packadd nvim-treesitter-textobjects ]]
 time([[Sequenced loading]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.api.nvim_create_user_command, 'CodeActionMenu', function(cmdargs)
+          require('packer.load')({'nvim-code-action-menu'}, { cmd = 'CodeActionMenu', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'nvim-code-action-menu'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('CodeActionMenu ', 'cmdline')
+      end})
+time([[Defining lazy-load commands]], false)
+
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
