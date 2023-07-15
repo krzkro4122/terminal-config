@@ -13,7 +13,10 @@ sudo apt install -y \
 	python3 \
 	kitty \
 	cmake \
-	pyright 
+	pyright \
+	docker.io \
+	docker-compose \
+	python-is-python3
 
 curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash -
 sudo apt install -y nodejs 
